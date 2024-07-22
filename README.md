@@ -25,7 +25,7 @@ Vector Vigil is a tool designed to predict the number of dengue cases based on w
 
 1. Clone the repository:
     \`\`\`bash
-    git clone https://github.com/your-username/Vector-Vigil.git
+    git clone [https://github.com/your-username/Vector-Vigil.git](https://github.com/ShushantSharma372/Vector-Vigil.git)
     cd VectorVigil
     \`\`\`
 
