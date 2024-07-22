@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0E0D0B, #201f1d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .iframe-container {
+            width: 90%;
+            height: 90%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 5px solid #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe title="project" 
+                src="https://app.powerbi.com/reportEmbed?reportId=c5c28689-e656-4a5d-be84-59471dfd3610&autoAuth=true&ctid=dce8bb35-165c-4983-8608-dec340151756" 
+                allowFullScreen="true">
+        </iframe>
+    </div>
+</body>
+</html>

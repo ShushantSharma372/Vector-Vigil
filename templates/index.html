@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Vector-Vigil</title>
+  <meta name="title" content="Vector-vigil Deepesh Mishra">
+  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./static/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./static/assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./static/assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./static/assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./static/assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Vector-Vigil</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Galgotias College of Engineering anf Technology
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 24X7</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+91 98989898989</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:vectorvigil@health.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">vectorvigil@health.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./static/assets/images/logo.png" width="160" height="50" alt="vectorvigil - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+       <!--
+
+       <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+        </a>--> 
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+         
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#story" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Story</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Galgotias College of Engineering <br>
+            Greater Noida, UP
+          </address>
+
+          <p class="body-4 navbar-text">Open: 24X7</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">vectorvigil@health.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Querry Request</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +91 98989898989
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+        <span class="text text-1">Go To Dashboard</span>
+
+        <span class="text text-2" aria-hidden="true">Go To Dashboard</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./static/assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Disease Predictions</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              "In the silence of cells, a tale of health and woe,
+              <br>
+               disease's next step, we dare to know."
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              "As algorithms hum, and patterns become clear,
+              <br>
+               disease's next move, we boldly peer."
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Better your Life</span>
+
+              <span class="text text-2" aria-hidden="true">Better of Life</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./static/assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Healthy life</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              "Genes whisper,
+              <br> future disease listens."
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              "In the whispers of cells, lies the future untold, disease's secrets unfold."
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Better your Life</span>
+
+              <span class="text text-2" aria-hidden="true">Better Your Life</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./static/assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Preventable</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              An attempt to make <br>
+              people life easier
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Pevention is better than cure.
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Better Your Life</span>
+
+              <span class="text text-2" aria-hidden="true">Better your life</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./static/assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Any Querries</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Health and Life</p>
+
+          <h2 class="headline-1 section-title">Our Project Has</h2>
+
+          <p class="section-text">
+            "Our project harnesses data's might, predicting diseases before they take flight."<br>
+            "With precision and insight, we foresee diseases, shining light."
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./static/assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Prediction</a>
+                  </h3>
+                  
+                  <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                    <span class="text text-1">Go To Dashboard</span>
+            
+                    <span class="text text-2" aria-hidden="true">Go To Dashboard</span>
+                  </a>
+                  <br>
+                  <p class="section-text">
+                    View current and Prediction of the Dengue Cases.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./static/assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Precautions</a>
+                  </h3>
+
+                  <a href="{{ url_for('alert') }}" class="btn btn-secondary">
+                    <span class="text text-1">Alert Message Setup</span>
+            
+                    <span class="text text-2" aria-hidden="true">Alert Message Setup</span>
+                  </a>
+                  <br>
+                  <p class="section-text">
+                    Enter your details to receive a precautionary alert about potential cases one month in advance.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./static/assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Integrity</a>
+                  </h3>
+
+                  <a href="{{ url_for('log_info') }}" class="btn btn-secondary">
+                    <span class="text text-1">Log Case Information</span>
+            
+                    <span class="text text-2" aria-hidden="true">Log Case Information</span>
+                  </a>
+                  <br>
+                  <p class="section-text">
+                    Person with medical authority is required to input cases information.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./static/assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./static/assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">How It Started</p>
+
+            <h2 class="headline-1 section-title">Read it</h2>
+
+            <p class="section-text">
+              We got this project opportunity in the form of a major project from college and then we started working on it. It was a challenging and exciting project to work on that has led us to have many neew and useful skills.
+            </p>
+
+            
+            <!-- <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a> -->
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./static/assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./static/assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <!-- <div class="abs-img abs-img-2 has-before">
+              <img src="./static/assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div> -->
+
+          </figure>
+
+          <!-- <img src="./static/assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape"> -->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label" id="story">
+
+        <div class="special-dish-banner">
+          <img src="./static/assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./static/assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">About The Project</p>
+
+            <h2 class="headline-1 section-title">Here......</h2>
+
+            <p class="section-text">
+              Vector Vigil stands as a groundbreaking innovation at the intersection of technology and public health. In an era marked by the rapid spread of vector-borne diseases, from malaria to Zika virus, this system represents a significant leap forward in disease surveillance and prediction. By harnessing the power of advanced data analytics and predictive modeling, Vector Vigil empowers public health authorities with the foresight needed to anticipate and mitigate outbreaks before they escalate into full-blown crises. Its ability to analyze diverse data sources, including environmental factors, population demographics, and historical disease patterns, enables it to generate accurate forecasts of disease transmission dynamics.
+
+
+            </p>
+
+
+          </div>
+        </div>
+
+        <img src="./static/assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+
+
+      </section>
+
+
+
+
+
+      
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./static/assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            "In an era of emerging infectious diseases and rapidly evolving vectors, proactive surveillance systems like Vector Vigil are paramount.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="contact">
+        <div class="container">
+            <div class="form reservation-form bg-black-10">
+                <form action="/" method="POST" class="form-left"> <!-- Ensure method is POST and action is correct -->
+                    <h2 class="headline-1 text-center">Don't Worry, We Are Here For You</h2>
+                    <p class="form-text text-center">
+                        Query request <a href="tel:+91 9999999999" class="link">91 9999999999</a>
+                        or fill out the order form
+                    </p>
+                    <div class="input-wrapper">
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <!-- Other input fields can go here if needed -->
+                    </div>
+                    <textarea name="message" placeholder="Message" autocomplete="off" class="input-field" required></textarea>
+                    <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Send it to us</span>
+                        <span class="text text-2" aria-hidden="true">Send it to us</span>
+                    </button>
+                </form>
+                <div class="form-right text-center" style="background-image: url('./static/assets/images/form-pattern.png')">
+                    <h2 class="headline-1 text-center">Contact Us</h2>
+                    <p class="contact-label">Contact Request</p>
+                    <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+91-999999999</a>
+                    <div class="separator"></div>
+                    <p class="contact-label">Location</p>
+                    <address class="body-4">
+                        Vector Vigil, GCET<br>
+                        Greater Noida, Uttar Pradesh
+                    </address>
+                    <p class="contact-label">Contact Time</p>
+                    <p class="body-4">
+                        Monday to Sunday<br>
+                        24X7
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% if message %}
+    <script>
+        alert("{{ message }}");
+    </script>
+    {% endif %}
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./static/assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Early Detection Capability</h3>
+
+                <p class="label-1 card-text">Vector Vigil employs advanced algorithms to predict outbreaks of vector-borne diseases preemptively, facilitating timely intervention and containment strategies.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./static/assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Scalability and Adaptability</h3>
+
+                <p class="label-1 card-text">Adapts to varying data sources and regional disease profiles for accurate predictions.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./static/assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">User-Friendly Interface</h3>
+
+                <p class="label-1 card-text">Vector Vigil offers an intuitive interface that empowers users to interpret predictions easily and make informed decisions.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./static/assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Future Integration with Existing Systems</h3>
+
+                <p class="label-1 card-text">Vector Vigil seamlessly will integrate with established public health surveillance infrastructure, enhancing its capabilities for disease monitoring and response.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- <img src="./static/assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./static/assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2"> -->
+
+        </div>
+      </section>
+
+
+
+
+
+     
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./static/assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+         <!--
+
+         <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>--> 
+
+          <address class="body-4">
+            Vector Vigil, GCET Greater Noida, Uttar Pradesh
+          </address>
+
+          <a href="#" class="body-4 contact-link">Vectorvigil@123.xyz</a>
+
+          <a href="#" class="body-4 contact-link">Query Request : +91 9999999999</a>
+
+          <p class="body-4">
+            Open : 24*7
+          </p>
+
+          <!-- <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Suggstions</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">Healthy Life.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div> -->
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+<!-- 
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Login/sign up</a>
+          </li> -->
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Features</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 Team Galgotia All Rights Reserved | Vector Vigil</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./static/assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
